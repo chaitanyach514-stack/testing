@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Do You Love Me?</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background: #ffe6e6;
+        margin-top: 100px;
+    }
+
+    h1 {
+        color: #e6005c;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 10px 25px;
+        margin: 20px;
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+    }
+
+    #yesBtn {
+        background-color: #ff4d88;
+        color: white;
+    }
+
+    #noBtn {
+        background-color: #ccc;
+        position: relative;
+    }
+
+    #msg {
+        color: red;
+        font-size: 14px;
+        margin-top: 10px;
+        display: none;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Do you love me? ❤️</h1>
+
+<button id="yesBtn" onclick="goToLovePage()">YES</button>
+
+<button id="noBtn" onmouseover="showMessage()">NO</button>
+
+<div id="msg">No is not allowed 😜</div>
+
+<script>
+    function showMessage() {
+        document.getElementById("msg").style.display = "block";
+    }
+
+    function goToLovePage() {
+        window.location.href = "love.html";
+    }
+</script>
+
+</body>
+</html>
